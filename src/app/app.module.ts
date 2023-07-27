@@ -12,6 +12,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { ContainerComponent } from './shared/components/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CardSearchComponent } from './shared/components/card-search/card-search.component';
+import { MatCardModule } from '@angular/material/card';
+import { CardTestimonyComponent } from './shared/components/card-testimony/card-testimony.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,8 @@ import { HomeComponent } from './pages/home/home.component';
     CardComponent,
     ContainerComponent,
     HomeComponent,
+    CardSearchComponent,
+    CardTestimonyComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,7 @@ import { HomeComponent } from './pages/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
