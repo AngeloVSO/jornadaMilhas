@@ -19,6 +19,13 @@ import { FormSearchComponent } from './shared/components/form-search/form-search
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { ModalComponent } from './shared/components/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BotaoControleComponent } from './shared/components/botao-controle/botao-controle.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +39,8 @@ import { MatChipsModule } from '@angular/material/chips';
     CardSearchComponent,
     CardTestimonyComponent,
     FormSearchComponent,
+    ModalComponent,
+    BotaoControleComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +52,11 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonToggleModule,
     MatIconModule,
     MatChipsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
