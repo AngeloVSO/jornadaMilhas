@@ -15,6 +15,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardSearchComponent } from './shared/components/card-search/card-search.component';
 import { MatCardModule } from '@angular/material/card';
 import { CardTestimonyComponent } from './shared/components/card-testimony/card-testimony.component';
+import { FormSearchComponent } from './shared/components/form-search/form-search.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { CardTestimonyComponent } from './shared/components/card-testimony/card-
     HomeComponent,
     CardSearchComponent,
     CardTestimonyComponent,
+    FormSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,9 @@ import { CardTestimonyComponent } from './shared/components/card-testimony/card-
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
+    MatButtonToggleModule,
+    MatIconModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
