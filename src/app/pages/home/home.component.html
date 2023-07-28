@@ -1,0 +1,27 @@
+<section class="homepage">
+  <app-banner
+    src="assets/imagens/banner-homepage.png"
+    alt="Banner da aplicação Jornada"
+  ></app-banner>
+  <app-container>
+    <app-form-search></app-form-search>
+    <h2>Promoções</h2>
+    <div class="card-wrapper" *ngIf="promocoes$ | async as promocoes">
+      <app-card-search
+        *ngFor="let promocao of promocoes"
+        [promocao]="promocao"
+      ></app-card-search>
+    </div>
+    <h2>Depoimentos</h2>
+    <div class="card-wrapper" *ngIf="depoimentos$ | async as depoimentos">
+      <app-card-testimony
+        *ngFor="let depoimento of depoimentos"
+        [depoimento]="depoimento"
+      ></app-card-testimony>
+    </div>
+  </app-container>
+  <app-banner
+    src="assets/imagens/banner-homepage-rodape.png"
+    alt="Banner rodapé da aplicação Jornada"
+  ></app-banner>
+</section>
