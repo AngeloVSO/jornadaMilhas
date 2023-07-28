@@ -6,20 +6,18 @@
   <app-container>
     <app-form-search></app-form-search>
     <h2>Promoções</h2>
-    <div class="card-wrapper">
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
-      <app-card-search></app-card-search>
+    <div class="card-wrapper" *ngIf="promocoes$ | async as promocoes">
+      <app-card-search
+        *ngFor="let promocao of promocoes"
+        [promocao]="promocao"
+      ></app-card-search>
     </div>
     <h2>Depoimentos</h2>
-    <div class="card-wrapper">
-      <app-card-testimony></app-card-testimony>
-      <app-card-testimony></app-card-testimony>
-      <app-card-testimony></app-card-testimony>
+    <div class="card-wrapper" *ngIf="depoimentos$ | async as depoimentos">
+      <app-card-testimony
+        *ngFor="let depoimento of depoimentos"
+        [depoimento]="depoimento"
+      ></app-card-testimony>
     </div>
   </app-container>
   <app-banner
